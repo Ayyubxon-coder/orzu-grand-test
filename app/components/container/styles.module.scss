@@ -2,13 +2,16 @@
   width: 100vw;
   display: grid;
   place-items: center;
+  position: relative;
 }
 .child {
   width: 90%;
   max-width: var(--layout-max-width);
+  position: relative;
 }
 .headerContainer {
   width: 100vw;
   display: grid;
   place-items: center;
+  position: relative;
 }

@@ -8,6 +8,7 @@
   --bold-font-size: 1.5rem;
   --big-font-size: 2rem;
   --button-primary-color: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
+  --button-hover-color: linear-gradient(90deg, #0c3a70 0%, #0a8282 100%);
 }
 
 * {

@@ -34,3 +34,13 @@
 .right {
   width: 50%;
 }
+.dots {
+  display: flex;
+  margin-left: 35%;
+  gap: 1rem;
+  img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}

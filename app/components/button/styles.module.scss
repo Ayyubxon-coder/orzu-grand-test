@@ -5,9 +5,15 @@
   background: var(--button-primary-color);
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
   &:active {
     outline: none;
     border: none;
+  }
+  &:hover {
+    background: var(--button-hover-color);
+    transition: all 1.5s ease-in-out;
   }
   span {
     color: var(--white-color);
