@@ -1,0 +1,20 @@
+.button {
+  width: 270px;
+  height: 70px;
+  border-radius: 35px;
+  background: var(--button-primary-color);
+  outline: none;
+  border: none;
+  &:active {
+    outline: none;
+    border: none;
+  }
+  span {
+    color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

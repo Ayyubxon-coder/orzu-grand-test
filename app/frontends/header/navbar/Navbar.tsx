@@ -1,5 +1,7 @@
+import Image from 'next/image';
+
 import { IconWrapper } from '@/app/components';
-import { navbarContent } from './constants';
+import { AddressWrapper } from './AddressWrapper';
 
 import styles from './styles.module.scss';
 
@@ -10,25 +12,24 @@ import magnifier from '../../../../public/icons/magnifier (1) 1.svg';
 import facebookIcon from '../../../../public/icons/facebook-app-symbol 1.svg';
 import russiaFlag from '../../../../public/icons/Flag_of_Russia 1.png';
 import arrowDown from '../../../../public/icons/arrow-down-sign-to-navigate (3) 1.svg';
-
-import Image from 'next/image';
+import { navbarContent } from '../constants';
 
 export function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.top}>
-        <div className={styles.address}>
+        <AddressWrapper>
           <IconWrapper alt='location image' src={locationImage} width={25} />
           <div className={styles.textWrapper}>
             <p>{navbarContent.address}</p>
           </div>
-        </div>
-        <div className={styles.address}>
+        </AddressWrapper>
+        <AddressWrapper>
           <IconWrapper alt='location image' src={phoneImage} width={25} />
           <div className={styles.textWrapper}>
             <p>{navbarContent.phoneNumber}</p>
           </div>
-        </div>
+        </AddressWrapper>
         <Image className={styles.logo} src={logo} alt='logo image' />
         <IconWrapper src={magnifier} alt='magnifier image' />
         <div className={styles.language}>

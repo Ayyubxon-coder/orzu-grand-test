@@ -3,3 +3,12 @@
   display: grid;
   place-items: center;
 }
+.child {
+  width: 90%;
+  max-width: var(--layout-max-width);
+}
+.headerContainer {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}

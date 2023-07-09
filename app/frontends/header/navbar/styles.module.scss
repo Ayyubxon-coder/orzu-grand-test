@@ -4,7 +4,7 @@
   margin-top: 30px;
   flex-direction: column;
   height: max-content;
-  max-width: var(--navbar-max-width);
+  max-width: var(--layout-max-width);
 }
 .top {
   display: flex;
@@ -25,7 +25,7 @@
 .addressText {
   color: #5a5a5a;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: var(--medium-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -47,7 +47,7 @@
     color: var(--blue-color);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: var(--small-font-size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -55,7 +55,7 @@
 }
 
 .bottom {
-  width: 100%;
+  width: 90%;
   height: 70px;
   display: flex;
   justify-content: space-between;
