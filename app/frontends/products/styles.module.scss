@@ -1,0 +1,19 @@
+.products {
+  min-height: 1380px;
+  height: max-content;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  h2 {
+    margin-bottom: 62px;
+  }
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}

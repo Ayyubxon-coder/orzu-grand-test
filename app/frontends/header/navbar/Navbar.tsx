@@ -49,7 +49,7 @@ export function Navbar() {
       <div className={styles.bottom}>
         {navbarContent.bottomContent.map((item) => {
           return (
-            <div>
+            <div key={item}>
               <h3>{item}</h3>
             </div>
           );

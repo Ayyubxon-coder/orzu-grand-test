@@ -1,0 +1,28 @@
+.product {
+  width: 413px;
+  min-width: 313px;
+  height: 439px;
+  //   flex-basis: 413px;
+  background-color: red;
+  border-radius: 35px;
+  background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 220px;
+    height: 220px;
+  }
+  p {
+    color: var(--primary-black);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 244px;
+    // letter-spacing: 2.52px;
+  }
+}

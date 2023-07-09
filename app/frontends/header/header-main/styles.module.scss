@@ -33,10 +33,13 @@
 }
 .right {
   width: 50%;
+  img {
+    width: 100%;
+  }
 }
 .dots {
   display: flex;
-  margin-left: 35%;
+  margin-left: 43%;
   gap: 1rem;
   img {
     width: 25px;

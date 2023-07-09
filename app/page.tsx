@@ -1,11 +1,11 @@
-import Image from 'next/image';
 import styles from './page.module.css';
-import { Header } from './frontends';
+import { Header, Products } from './frontends';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
+      <Products />
     </main>
   );
 }
