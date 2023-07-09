@@ -1,0 +1,9 @@
+.header {
+  background: url(../../../public/icons/header-background.png),
+    lightgray 100% / cover no-repeat;
+  width: 100%;
+  min-height: 980px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
