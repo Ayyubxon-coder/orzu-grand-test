@@ -4,4 +4,39 @@
   border-radius: 50px;
   background: var(--white-color);
   box-shadow: var(--services-card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  img {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  p {
+    color: var(--blue-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+  }
+}
+.content {
+  color: var(--primary-black);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0px 41px;
+  // width: 305px;
+}
+.button {
+  bottom: -21px;
+  position: absolute;
+  height: 50px;
 }

@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import { Header, Products, Services } from './frontends';
+import { AboutUs, Header, Products, Services } from './frontends';
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Header />
       <Products />
       <Services />
+      <AboutUs />
     </main>
   );
 }

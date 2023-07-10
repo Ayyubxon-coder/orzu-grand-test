@@ -12,8 +12,8 @@ export function ServicesCard({ content, image, title }: ServicesCardPropsType) {
     <div className={styles.card}>
       <Image src={image} alt={title} />
       <p>{title}</p>
-      <span>{content}</span>
-      <Button title='Подробнее' />
+      <span className={styles.content}>{content}</span>
+      <Button className={styles.button} size='small' title='Подробнее' />
     </div>
   );
 }

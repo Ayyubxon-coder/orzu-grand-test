@@ -10,7 +10,14 @@ export function Services() {
       <Container>
         <div className={styles.wrapper}>
           {servicesContent.map((card) => {
-            return <ServicesCard />;
+            return (
+              <ServicesCard
+                title={card.title}
+                content={card.content}
+                image={card.image}
+                key={card.title}
+              />
+            );
           })}
         </div>
       </Container>
