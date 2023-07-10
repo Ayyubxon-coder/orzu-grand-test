@@ -3,7 +3,6 @@ import styles from './styles.module.scss';
 
 export type ContainerType = {
   children: ReactNode;
-
   header?: boolean;
 };
 export function Container({ children, header }: ContainerType) {

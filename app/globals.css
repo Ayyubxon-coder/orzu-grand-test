@@ -10,6 +10,8 @@
   --button-primary-color: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
   --button-hover-color: linear-gradient(90deg, #0c3a70 0%, #0a8282 100%);
   --primary-black: #000;
+
+  --services-card-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
 }
 
 * {

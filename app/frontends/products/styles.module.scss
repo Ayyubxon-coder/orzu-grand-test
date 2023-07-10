@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  padding-bottom: 70px;
   h2 {
     margin-bottom: 62px;
   }
@@ -16,4 +18,8 @@
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
+  margin-bottom: 81px;
+}
+.link {
+  margin-bottom: 69px;
 }

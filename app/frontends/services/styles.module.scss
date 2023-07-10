@@ -1,0 +1,15 @@
+.services {
+  background: url(../../../public//icons/services-background.png),
+    lightgray 50% / cover no-repeat;
+  min-height: 680px;
+  max-height: max-content;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  background-color: red;
+  margin-top: 62px;
+}

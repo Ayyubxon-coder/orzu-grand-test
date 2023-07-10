@@ -36,4 +36,7 @@ export const productsContent = {
       image: aritmology,
     },
   ],
+  linkContent: 'Перейти в каталог нашей продукции',
+  services: 'УСЛУГИ',
+  title: 'ПРОДУКЦИЯ',
 };
