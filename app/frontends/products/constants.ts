@@ -8,31 +8,31 @@ import aritmology from '../../../public/icons/pacemaker-advisa-mrishtsh222 1.png
 export const productsContent = {
   productCards: [
     {
-      name: 'Эндоваскулярная хирургия',
+      content: 'Эндоваскулярная хирургия',
       image: endeavor,
     },
     {
-      name: 'Лабораторная диагностика',
+      content: 'Лабораторная диагностика',
 
       image: diagnose,
     },
     {
-      name: 'Кардиохирургия',
+      content: 'Кардиохирургия',
 
       image: cardiology,
     },
     {
-      name: 'ДИАБЕТ',
+      content: 'ДИАБЕТ',
 
       image: diabet,
     },
     {
-      name: 'ЭНДОУРОЛОГИЯ',
+      content: 'ЭНДОУРОЛОГИЯ',
 
       image: enduorology,
     },
     {
-      name: 'АРИТМОЛОГИЯ',
+      content: 'АРИТМОЛОГИЯ',
       image: aritmology,
     },
   ],

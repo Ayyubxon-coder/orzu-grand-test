@@ -11,22 +11,10 @@ export function Products() {
         <Title title={productsContent.title} />
         <div className={styles.wrapper}>
           {productsContent.productCards.slice(0, 3).map((card) => {
-            return (
-              <ProductCard
-                content={card.name}
-                image={card.image}
-                key={card.name}
-              />
-            );
+            return <ProductCard {...card} key={card.content} />;
           })}
           {productsContent.productCards.slice(3, 6).map((card) => {
-            return (
-              <ProductCard
-                content={card.name}
-                image={card.image}
-                key={card.name}
-              />
-            );
+            return <ProductCard {...card} key={card.content} />;
           })}
         </div>
         <Link className={styles.link} title={productsContent.linkContent} />
