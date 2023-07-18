@@ -1,0 +1,12 @@
+.wrapper {
+  border-radius: 25px;
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+
+.right {
+  transform: rotate(180deg);
+}

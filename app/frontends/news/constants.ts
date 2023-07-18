@@ -1,4 +1,5 @@
 import doctorImage from '../../../public/icons/20180420_101750 1 (1).png';
+
 export const newsContent = {
   title: 'НОВОСТИ',
   cardContent: [
