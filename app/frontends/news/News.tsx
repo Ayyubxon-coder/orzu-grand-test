@@ -1,9 +1,4 @@
-import {
-  ARROW_POSITION,
-  ArrowButton,
-  Container,
-  Title,
-} from '@/app/components';
+import { ArrowButton, Container, Link, Title } from '@/app/components';
 
 import styles from './styles.module.scss';
 import { newsContent } from './constants';
@@ -23,6 +18,11 @@ export function News() {
             className={`${styles.right__arrow}`}
             position={ARROW_POSITION.RIGHT}
           />
+        </div>
+        <div className={styles.link__wrapper}>
+          {newsContent.links.map((el) => {
+            return <Link title={el.content} key={el.content} />;
+          })}
         </div>
       </div>
     </Container>

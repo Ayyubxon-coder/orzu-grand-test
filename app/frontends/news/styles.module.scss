@@ -27,3 +27,11 @@
   position: absolute;
   top: 39%;
 }
+
+.link__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 75px;
+  width: 80%;
+}
