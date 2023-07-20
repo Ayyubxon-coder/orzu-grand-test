@@ -6,7 +6,8 @@ import {
   Products,
   Services,
   Partners,
-} from './frontends';
+  Footer,
+} from './sections';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutUs />
       <News />
       <Partners />
+      <Footer />
     </main>
   );
 }
