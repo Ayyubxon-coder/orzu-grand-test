@@ -2,13 +2,14 @@ import Image, { StaticImageData } from 'next/image';
 import { Button } from '@/app/components';
 
 import styles from './styles.module.scss';
+import { PRIMARY_COLOR_TYPE } from '@/app/shared';
 
 type NewsCardPropsType = {
   image: StaticImageData;
   title: string;
   date: string;
   content: string;
-  buttonColor: PRIMARY_COLORS.BLUE | PRIMARY_COLORS.GREEN;
+  buttonColor: PRIMARY_COLOR_TYPE.BLUE | PRIMARY_COLOR_TYPE.GREEN;
 };
 
 export function NewsCard({

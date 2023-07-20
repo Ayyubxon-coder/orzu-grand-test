@@ -1,0 +1,38 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+.wrapper {
+  width: 100%;
+}
+.card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 70px;
+  // margin-bottom: 29px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.arrow {
+  position: absolute;
+  left: -1.5%;
+  z-index: 10;
+  top: 50.5%;
+}
+
+.right__arrow {
+  right: -1.5%;
+  position: absolute;
+  top: 50.5%;
+}
+
+@media only screen and (max-width: 1380px) and (min-width: 400px) {
+  .card__wrapper {
+    justify-content: space-evenly;
+  }
+}

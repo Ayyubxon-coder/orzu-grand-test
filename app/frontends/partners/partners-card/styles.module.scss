@@ -1,0 +1,30 @@
+.wrapper {
+  width: 275px;
+  height: 130px;
+  border-radius: 30px;
+  border: 1px solid var(--partners-card-border);
+  background: var(--white-color);
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+  img {
+    width: 156px;
+    height: 114px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .wrapper:nth-child(4) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .wrapper:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper:nth-child(2) {
+    display: none;
+  }
+}

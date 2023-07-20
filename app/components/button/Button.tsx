@@ -1,16 +1,17 @@
 import { HTMLAttributes } from 'react';
 import styles from './styles.module.scss';
+import { PRIMARY_COLOR_TYPE } from '@/app/shared';
 
 export type ButtonPropsType = {
   title: string;
   size?: 'small' | 'default';
-  color?: PRIMARY_COLORS.GREEN | PRIMARY_COLORS.BLUE;
+  color?: PRIMARY_COLOR_TYPE.GREEN | PRIMARY_COLOR_TYPE.BLUE;
 } & HTMLAttributes<Partial<HTMLButtonElement>>;
 
 export function Button({
   title,
   size = 'default',
-  color = PRIMARY_COLORS.BLUE,
+  color = PRIMARY_COLOR_TYPE.BLUE,
   ...props
 }: ButtonPropsType) {
   return (

@@ -2,11 +2,8 @@ import styles from './styles.module.scss';
 import ArrowImage from '../../../public/icons/arrow-down-sign-to-navigate (3) 1 (1).svg';
 import Image from 'next/image';
 import { HTMLAttributes } from 'react';
+import { ARROW_POSITION } from '@/app/shared';
 
-export enum ARROW_POSITION {
-  LEFT = 'left',
-  RIGHT = 'right',
-}
 type ArrowButtonPropsType = {
   position?: ARROW_POSITION.LEFT | ARROW_POSITION.RIGHT;
 } & Partial<HTMLAttributes<HTMLDivElement>>;

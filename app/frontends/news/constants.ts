@@ -1,7 +1,8 @@
 import { StaticImageData } from 'next/image';
 import doctorImage from '../../../public/icons/20180420_101750 1 (1).png';
+import { PRIMARY_COLORS, PRIMARY_COLOR_TYPE } from '@/app/shared';
 type LinksType = {
-  content: string;
+  title: string;
   color: PRIMARY_COLORS.GREEN | PRIMARY_COLORS.BLUE;
 };
 type NewContentType = {
@@ -11,7 +12,7 @@ type NewContentType = {
     title: string;
     date: string;
     content: string;
-    buttonColor: PRIMARY_COLORS.BLUE | PRIMARY_COLORS.GREEN;
+    buttonColor: PRIMARY_COLOR_TYPE.BLUE | PRIMARY_COLOR_TYPE.GREEN;
   }[];
   links: LinksType[];
 };
@@ -25,7 +26,7 @@ export const newsContent: NewContentType = {
       date: '26.07.2021',
       content:
         'С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский Специализированный Научно-Практический Медицинский Центр Урологии) при поддержке компаний Ethicon Endo Surgery (Johnson&Johnson) и ИП ООО «Medical Online Services» был проведен мастер-класс в исполнении...',
-      buttonColor: PRIMARY_COLORS.BLUE,
+      buttonColor: PRIMARY_COLOR_TYPE.BLUE,
     },
     {
       image: doctorImage,
@@ -33,7 +34,7 @@ export const newsContent: NewContentType = {
       date: '26.07.2021',
       content:
         'С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский Специализированный Научно-Практический Медицинский Центр Урологии) при поддержке компаний Ethicon Endo Surgery (Johnson&Johnson) и ИП ООО «Medical Online Services» был проведен мастер-класс в исполнении...',
-      buttonColor: PRIMARY_COLORS.GREEN,
+      buttonColor: PRIMARY_COLOR_TYPE.GREEN,
     },
     {
       image: doctorImage,
@@ -41,16 +42,16 @@ export const newsContent: NewContentType = {
       date: '26.07.2021',
       content:
         'С 19 по 21 апреля в АО «РСНПМЦУ» (Республиканский Специализированный Научно-Практический Медицинский Центр Урологии) при поддержке компаний Ethicon Endo Surgery (Johnson&Johnson) и ИП ООО «Medical Online Services» был проведен мастер-класс в исполнении...',
-      buttonColor: PRIMARY_COLORS.BLUE,
+      buttonColor: PRIMARY_COLOR_TYPE.BLUE,
     },
   ],
   links: [
     {
-      content: 'Посмотреть все новости',
+      title: 'Посмотреть все новости',
       color: PRIMARY_COLORS.GREEN,
     },
     {
-      content: 'Подписаться на новости',
+      title: 'Подписаться на новости',
       color: PRIMARY_COLORS.BLUE,
     },
   ],
