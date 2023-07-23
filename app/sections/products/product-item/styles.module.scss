@@ -1,8 +1,6 @@
 .product {
-  width: 413px;
-  min-width: 313px;
+  max-width: 413px;
   height: 439px;
-  //   flex-basis: 413px;
   border-radius: 35px;
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
   display: flex;

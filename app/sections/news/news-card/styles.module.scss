@@ -44,7 +44,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    width: 327px;
+    max-width: 327px;
     font-family: 'Montserrat', sans-serif;
   }
 }
@@ -61,5 +61,13 @@
 @media only screen and (max-width: 855px) {
   .card:nth-child(2) {
     display: none;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .card {
+    width: 90%;
+    img {
+      width: 90%;
+    }
   }
 }

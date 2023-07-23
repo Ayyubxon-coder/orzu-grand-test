@@ -1,5 +1,5 @@
 .card {
-  width: 388px;
+  max-width: 388px;
   height: 491px;
   border-radius: 50px;
   background: var(--white-color);
@@ -11,6 +11,7 @@
   img {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    width: 100%;
   }
   p {
     color: var(--blue-color);
@@ -39,4 +40,10 @@
   bottom: -21px;
   position: absolute;
   height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 320px;
+  }
 }
