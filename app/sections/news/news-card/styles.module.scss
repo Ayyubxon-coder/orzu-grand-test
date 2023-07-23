@@ -1,7 +1,6 @@
 .card {
   width: 382px;
   height: 470px;
-  background-color: red;
   border-radius: 35px;
   border: 2px solid #f6f6f6;
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(255, 255, 255, 0) 100%);
@@ -52,4 +51,15 @@
 .button {
   position: absolute;
   bottom: -1.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .card:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .card:nth-child(2) {
+    display: none;
+  }
 }

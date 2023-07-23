@@ -16,7 +16,7 @@ export function News() {
             return <NewsCard {...card} key={card.content} />;
           })}
           <ArrowButton
-            className={`${styles.right__arrow}`}
+            className={styles.right__arrow}
             position={ARROW_POSITION.RIGHT}
           />
         </div>

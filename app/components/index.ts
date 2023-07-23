@@ -5,3 +5,4 @@ export * from './link';
 export * from './arrow-button';
 
 export * from './icon-wrapper';
+export * from './address-wrapper';

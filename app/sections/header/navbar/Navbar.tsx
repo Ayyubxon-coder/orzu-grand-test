@@ -1,7 +1,9 @@
+'use client';
 import Image from 'next/image';
 
-import { IconWrapper } from '@/app/components';
-import { AddressWrapper } from './AddressWrapper';
+import { IconWrapper, AddressWrapper } from '@/app/components';
+
+import { navbarContent } from '../constants';
 
 import styles from './styles.module.scss';
 
@@ -12,24 +14,19 @@ import magnifier from '../../../../public/icons/magnifier (1) 1.svg';
 import facebookIcon from '../../../../public/icons/facebook-app-symbol 1.svg';
 import russiaFlag from '../../../../public/icons/Flag_of_Russia 1.png';
 import arrowDown from '../../../../public/icons/arrow-down-sign-to-navigate (3) 1.svg';
-import { navbarContent } from '../constants';
+import navbarIcon from '../../../../public/icons/navigation-bar.png';
 
-export function Navbar() {
+type NavbarPropsType = {
+  handleOpenSidebar: () => void;
+};
+
+export function Navbar({ handleOpenSidebar }: NavbarPropsType) {
   return (
     <div className={styles.navbar}>
       <div className={styles.top}>
-        <AddressWrapper>
-          <IconWrapper alt='location image' src={locationImage} width={25} />
-          <div className={styles.textWrapper}>
-            <p>{navbarContent.address}</p>
-          </div>
-        </AddressWrapper>
-        <AddressWrapper>
-          <IconWrapper alt='location image' src={phoneImage} width={25} />
-          <div className={styles.textWrapper}>
-            <p>{navbarContent.phoneNumber}</p>
-          </div>
-        </AddressWrapper>
+        <AddressWrapper text={navbarContent.address} icon={locationImage} />
+        <AddressWrapper text={navbarContent.phoneNumber} icon={phoneImage} />
+
         <Image className={styles.logo} src={logo} alt='logo image' />
         <IconWrapper src={magnifier} alt='magnifier image' />
         <div className={styles.language}>
@@ -45,6 +42,12 @@ export function Navbar() {
           <span>{navbarContent.language}</span>
           <Image alt='arrow down icon' src={arrowDown} />
         </div>
+        <Image
+          className={styles.nav__icon}
+          src={navbarIcon}
+          alt='navbar icon'
+          onClick={handleOpenSidebar}
+        />
       </div>
       <div className={styles.bottom}>
         {navbarContent.bottomContent.map((item) => {

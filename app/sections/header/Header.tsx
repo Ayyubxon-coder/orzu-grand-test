@@ -4,11 +4,15 @@ import { HeaderMain } from './header-main';
 
 import styles from './styles.module.scss';
 
-export function Header() {
+type HeaderPropsType = {
+  handleOpenSidebar: () => void;
+};
+
+export function Header({ handleOpenSidebar }: HeaderPropsType) {
   return (
     <Container header={true}>
       <section className={styles.header}>
-        <Navbar />
+        <Navbar handleOpenSidebar={handleOpenSidebar} />
         <HeaderMain />
       </section>
     </Container>

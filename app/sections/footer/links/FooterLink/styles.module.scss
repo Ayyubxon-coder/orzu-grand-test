@@ -1,0 +1,14 @@
+.link {
+  color: var(--footer-contacts-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+  cursor: pointer;
+}
+.selected {
+  color: var(--primary-green);
+  line-height: 28px;
+  text-decoration-line: underline;
+}
