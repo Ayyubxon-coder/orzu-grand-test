@@ -9,7 +9,7 @@ type NewsCardPropsType = {
   title: string;
   date: string;
   content: string;
-  buttonColor: PRIMARY_COLOR_TYPE.BLUE | PRIMARY_COLOR_TYPE.GREEN;
+  buttonColor: PRIMARY_COLOR_TYPE;
 };
 
 export function NewsCard({

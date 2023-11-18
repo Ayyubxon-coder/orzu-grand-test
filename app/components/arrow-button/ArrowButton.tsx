@@ -6,15 +6,15 @@ import { ARROW_POSITION } from '@/app/shared';
 
 type ArrowButtonPropsType = {
   position?: ARROW_POSITION.LEFT | ARROW_POSITION.RIGHT;
-} & Partial<HTMLAttributes<HTMLDivElement>>;
+} & Partial<HTMLAttributes<HTMLButtonElement>>;
 
 export function ArrowButton({
   position = ARROW_POSITION.LEFT,
   ...props
 }: ArrowButtonPropsType) {
   return (
-    <div {...props} className={`${styles.wrapper} ${props.className}`}>
+    <button {...props} className={`${styles.wrapper} ${props.className}`}>
       <Image src={ArrowImage} alt='arrow icon' className={styles[position]} />
-    </div>
+    </button>
   );
 }

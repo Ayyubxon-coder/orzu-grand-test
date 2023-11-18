@@ -5,6 +5,13 @@ import { newsContent } from './constants';
 import { NewsCard } from './news-card';
 import { ARROW_POSITION } from '@/app/shared';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import 'swiper/css';
+
 export function News() {
   return (
     <Container>
@@ -12,9 +19,21 @@ export function News() {
         <Title title={newsContent.title} />
         <div className={styles.cards}>
           <ArrowButton className={styles.arrow} />
-          {newsContent.cardContent.map((card) => {
-            return <NewsCard {...card} key={card.content} />;
-          })}
+          <Swiper
+            slidesPerView={3}
+            modules={[FreeMode, Pagination, Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+          >
+            {newsContent.cardContent.map((card, index) => (
+              <SwiperSlide key={index}>
+                <NewsCard {...card} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <ArrowButton
             className={styles.right__arrow}
             position={ARROW_POSITION.RIGHT}
